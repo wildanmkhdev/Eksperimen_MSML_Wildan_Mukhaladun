@@ -6,6 +6,8 @@ from sklearn.ensemble import RandomForestRegressor
 import mlflow
 import mlflow.sklearn
 
+mlflow.set_experiment("Workflow_CI_Training")
+
 df = pd.read_csv(
     "student_exam_preprocessed.csv"
 )
